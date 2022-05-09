@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/nav.css"/>
     <link rel="stylesheet" href="../css/footer.css"/>
-    <link rel="stylesheet" href="../css/home.css"/>
-    <link rel="stylesheet" href="../css/search-filter.css"/>
-    <title>Rooms</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Product</title>
 </head>
 <body>
 <nav class="navbar">
@@ -15,8 +15,8 @@
         <a href="../index.html"> <img src="/static/img/Logo-picture.png" class="logo" alt="Logo of company"></a>
         <div class="nav-items">
             <div class="search">
-                <input type="search" class="search-box" id="search-input" placeholder="Search...">
-                <button id="filter-btn" class="search-btn">Search</button>
+                <input type="text" class="search-box" placeholder="Search">
+                <button class="search-btn">Search</button>
             </div>
             <a href="#"><img src="/static/img/Account-picture.png" alt="Account"></a>
             <a href="#"><img src="/static/img/Cart-picture.png" alt="Cart"></a>
@@ -24,27 +24,45 @@
     </div>
     <ul class="links-container">
         <li class="link-item"><a href="../index.html" class="link">Home</a></li>
-        <li class="link-item"><a href="rooms.html" class="link">Rooms</a></li>
+        <li class="link-item"><a href="../rooms/rooms.html" class="link">Rooms</a></li>
         <li class="link-item"><a href="../resturant/resturant.html" class="link">Resturant</a></li>
     </ul>
 </nav>
-<div id="buttons">
-    <button class="button-value" onclick="filterProduct('all')">All</button>
-    <button class="button-value" onclick="filterProduct('All-Inclusive')">
-        All-Inclusive
-    </button>
-    <button class="button-value" onclick="filterProduct('Single-Room')">
-        Single-Room
-    </button>
-    <button class="button-value" onclick="filterProduct('Economy')">
-        Economy
-    </button>
-    <button class="button-value" onclick="filterProduct('Luxury')">
-        Luxury
-    </button>
-</div>
-<div id="output"></div>
+<section class="product-details">
+    <div class="image-slider">
+        <div class="product-images">
+            <img src="/static/img/Hotel-room-1.jpg" class="active" alt="">
+            <img src="/static/img/Hotel-room-2.png" alt="">
+            <img src="/static/img/Hotel-room-3.jpg" alt="">
+            <img src="/static/img/Hotel-room-4.jpg" alt="">
+        </div>
+    </div>
+    <section>
+        <div class="details">
+            <h2 class="product-room">Hotel room</h2>
+            <p class="product-short-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <span class="product-price">$125</span>
+            <span class="product-actual-price">$199</span>
+            <span class="product-discount">( 25% off )</span>
 
+            <p class="product-sub-heading">Amenities</p>
+
+            <label class="size-radio-btn check" style="background-size: cover; background-image: url('/static/img/Coffee-icon.png')" title="Breakfast"></label>
+            <label class="size-radio-btn" style="background-size: cover; background-image: url('/static/img/Wifi-icon.png')" title="Free-wifi"></label>
+            <label  class="size-radio-btn" style="background-size: cover; background-image: url('/static/img/TV-icon.png')" title="Cable-Tv"></label>
+            <label class="size-radio-btn" style="background-size: cover; background-image: url('/static/img/Swimmingpool-icon.png')" title="Swimming-pool"></label>
+            <label class="size-radio-btn" style="background-size: cover; background-image: url('/static/img/Parking-icon.png')" title="Parking"></label>
+
+            <button class="btn cart-btn">Order</button>
+            <button class="btn">add to wishlist</button>
+        </div>
+    </section>
+</section>
+<section class="detail-des">
+    <h2 class="heading">description</h2>
+    <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Repellat tempore ad suscipit, eos eius quisquam sed</p><br/>
+</section>
 <footer>
     <div class="footer-content">
         <img src="../img/Logo-Light.png" class="logo" alt="Logo of company">
@@ -79,6 +97,6 @@
         <a href="https://www.shutterstock.com/"><abbr title="Shutterstock">Shutterstock.com</abbr></a><br/>
         Copyright &copy; 2022, All right reserved</p>
 </footer>
-<script src="../js/search-filter.js"></script>
+<script src="../js/product.js"></script>
 </body>
 </html>
