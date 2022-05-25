@@ -1,12 +1,4 @@
 
-
-
-body {
-    margin-bottom:60px;
-    font-family:'Khand', sans-serif;
-}
-
-
 h3 {
     display:inline-block;
     font-size:32px;
@@ -17,8 +9,6 @@ h3 {
 }
 h3:before{
     left:-40px;
-    height:0;
-    height:1px;
 }
 h3:before, h3:after {
     content:"";
@@ -27,32 +17,19 @@ h3:before, h3:after {
     height:1px;
     width:40px;
     margin:0 -15px;
-    background-color:#533834;
+    background-color:black;
 }
 h3:after{
     right:-40px;
 }
-h5 {
-    font-size:16px;
-    line-height:22px;
-    margin:0 0 15px;
-    font-weight:400;
-}
+
 .item {
     position:relative;
     overflow:hidden;
     margin-bottom:20px;
 }
-.item h4, .item p {
-    display:block;
-    clear:both;
-    color:#533834;
-}
-.item p {
-    clear:both;
-    color:#938372;
-    margin-left:5px;
-}
+
+
 .item span:first-of-type {
     background-image:linear-gradient(to right,rgba(56,47,47,.5) 33%,rgba(0,0,0,0) 0%);
     background-position:bottom;
@@ -67,11 +44,9 @@ h5 {
 .badge {
     display:inline-block;
     padding:0 10px;
-    background:#d2c82a;
     font-size:12px;
     font-weight:300;
     line-height:26px;
-    color:#fff;
     text-align:center;
     vertical-align:middle;
     text-transform:uppercase;
@@ -83,9 +58,6 @@ h5 {
 .note {
     padding:0 5px 0 7px;
     min-width:23px;
-    background:rgba(0,0,0,0);
-    border:1px solid #382f2f;
-    color:#382f2f;
     box-sizing:border-box;
     border-radius:12px;
     line-height:21px;
@@ -94,10 +66,7 @@ h5 {
     color:#82b440;
     border-color:#82b440;
 }
-.spicy {
-    color:#ec4e00;
-    border-color:#ec4e00;
-}
+
 .item span:nth-of-type(2n) {
     position:absolute;
     font-size:22px;
@@ -115,4 +84,25 @@ h5 {
     text-transform:capitalize;
     margin-bottom:4px;
     position:relative;
+}
+
+@media screen and (max-width: 600px) {
+    .logo{
+        margin-left: 43vw;
+    }
+    .links-container{
+        text-align: center;
+    }
+    .link-item{
+        height: 18.5px;
+    }
+
+    .col-12 h1{
+        font-size: 30px;
+    }
+
+    .text-center h3{
+        font-size: 20px;
+        width: 45vw;
+    }
 }

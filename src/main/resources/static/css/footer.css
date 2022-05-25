@@ -1,3 +1,7 @@
+
+
+
+
 footer{
     position: relative;
     width: 100%;
@@ -78,10 +82,58 @@ footer{
 .footer-credit{
     width: 100%;
     padding: 10px;
+    margin: 0;
     position: absolute;
     left: 0;
     bottom: 0;
     text-align: center;
     color: #fff;
     background: rgba(0, 0, 0, 0.2);
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:250px;
+    width:350px;
+}
+.gmap_canvas{
+    overflow:hidden;
+    background:none
+    !important;
+    height:250px;
+    width:350px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .footer-content img{
+        max-width: 100px;
+        width: 40vw;
+        margin: 0;
+    }
+    .category{
+
+    }
+    .footer-ul-container li{
+        font-size: 12px;
+    }
+    .mapouter{
+        height:250px;
+        width: 80vw;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .gmap_canvas{
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+
+    p{
+        padding: 2px;
+    }
+    .footer-credit{
+        font-size: 12px;
+    }
+
 }

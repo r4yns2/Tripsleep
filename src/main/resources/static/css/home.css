@@ -3,6 +3,9 @@
 @import "product.css";
 @import "search.css";
 
+
+
+
 .main-header{
     width: 100%;
     height: calc(100vh - 120px);
@@ -201,4 +204,26 @@
 
 .pre-btn:hover img, .nxt-btn:hover img{
     opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .main-header .logo{
+        width: 100%;
+        max-width: 150px;
+    }
+    .main-header .sub-heading{
+        width: 70vw;
+        font-size: 20px;
+        font-weight: 150;
+    }
+    .rooms-category{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .rooms-container{
+        width: 90%;
+    }
+
 }

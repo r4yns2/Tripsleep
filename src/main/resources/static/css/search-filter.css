@@ -19,7 +19,7 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-column-gap: 1.5em;
-    padding: 2em 23em;
+    padding: 2em 2em;
 }
 .card {
     background-color: #ffffff;
@@ -35,7 +35,6 @@ body {
 img {
     max-width: 100%;
     object-fit: contain;
-    height: 15em;
 }
 .container {
     padding-top: 1em;
@@ -51,7 +50,6 @@ img {
     img {
         max-width: 100%;
         object-fit: contain;
-        height: 10em;
     }
     .card {
         max-width: 10em;
@@ -60,5 +58,23 @@ img {
     #output {
         grid-template-columns: auto auto;
         grid-column-gap: 1em;
+        padding: 2em 10em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    img {
+        max-width: 100%;
+        width: 60vw;
+        object-fit: contain;
+    }
+    .card {
+        max-width: 10em;
+        margin-top: 1em;
+    }
+    #output {
+        grid-template-columns: auto auto;
+        grid-column-gap: 1em;
+        padding: 2em;
     }
 }
