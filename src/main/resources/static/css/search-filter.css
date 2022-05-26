@@ -35,6 +35,7 @@ body {
 img {
     max-width: 100%;
     object-fit: contain;
+    height: 40vh;
 }
 .container {
     padding-top: 1em;
@@ -48,8 +49,7 @@ img {
 }
 @media screen and (max-width: 720px) {
     img {
-        max-width: 100%;
-        object-fit: contain;
+        height: 30vh;
     }
     .card {
         max-width: 10em;
@@ -64,17 +64,16 @@ img {
 
 @media screen and (max-width: 600px) {
     img {
-        max-width: 100%;
+        height: 20vh;
         width: 60vw;
-        object-fit: contain;
+
     }
     .card {
         max-width: 10em;
         margin-top: 1em;
     }
     #output {
-        grid-template-columns: auto auto;
-        grid-column-gap: 1em;
+
         padding: 2em;
     }
 }

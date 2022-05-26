@@ -213,10 +213,14 @@
         width: 100%;
         max-width: 150px;
     }
+    .main-header{
+        height: calc(100vh - 200px);
+    }
     .main-header .sub-heading{
         width: 70vw;
         font-size: 20px;
         font-weight: 150;
+        height: 10vh;
     }
     .rooms-category{
         font-size: 20px;
