@@ -3,26 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/home.css"/>
+    <link rel="stylesheet" href="../css/search-filter.css"/>
     <title>Rooms</title>
 </head>
 <body>
 <nav class="navbar">
     <div id="nav">
-        <img src="/static/img/Logo-picture.png" class="logo" alt="Logo of company">
+        <a href="../index.html"> <img src="/static/img/Logo-picture.png" class="logo" alt="Logo of company"></a>
         <div class="nav-items">
             <div class="search">
-                <input type="text" class="search-box" placeholder="Search">
-                <button class="search-btn">Search</button>
+                <input type="search" class="search-box" id="search-input" placeholder="Search...">
+                <button id="filter-btn" class="search-btn">Search</button>
             </div>
             <a href="#"><img src="/static/img/Account-picture.png" alt="Account"></a>
             <a href="#"><img src="/static/img/Cart-picture.png" alt="Cart"></a>
         </div>
     </div>
+    <ul class="links-container">
+        <li class="link-item"><a href="../index.html" class="link">Home</a></li>
+        <li class="link-item"><a href="rooms.html" class="link">Rooms</a></li>
+        <li class="link-item"><a href="../resturant/resturant.html" class="link">Resturant</a></li>
+    </ul>
 </nav>
-    <footer>
-        <p>
-            Copyright &copy; 2022, All right reserved
-        </p>
-    </footer>
+<div id="buttons">
+    <button class="button-value" onclick="filterProduct('all')">All</button>
+    <button class="button-value" onclick="filterProduct('All-Inclusive')">
+        All-Inclusive
+    </button>
+    <button class="button-value" onclick="filterProduct('Single-Room')">
+        Single-Room
+    </button>
+    <button class="button-value" onclick="filterProduct('Economy')">
+        Economy
+    </button>
+    <button class="button-value" onclick="filterProduct('Luxury')">
+        Luxury
+    </button>
+</div>
+<div id="output"></div>
+
+<footer>
+    <div class="footer-content">
+        <img src="../img/Logo-Light.png" class="logo" alt="Logo of company">
+        <div class="footer-ul-container">
+            <ul class="category">
+                <li class="category-title">Hotel</li>
+                <li><a href="#" class="footer-link">Rooms</a></li>
+            </ul>
+            <ul class="category">
+                <li class="category-title">Resturant</li>
+                <li><a href="#" class="footer-link">Menu</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="footer-title">About company</p>
+    <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Repellat tempore ad suscipit, eos eius quisquam sed optio nisi</p>
+    <p class="info">Support e-mails - help@tripsleep.com, customersupport@tripsleep.com</p>
+    <p class="info">Telephone - 67 88 34 55</p>
+    <!-- Source: https://google-map-generator.com/ Line: 158-166 -->
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="350" height="250" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Slottsplassen%201,%200010%20Oslo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <a href="https://123movies-to.org"></a><br>
+            <a href="https://www.embedgooglemap.net">google map widget for website</a>
+        </div>
+    </div>
+    <div class="footer-social-container">
+        <div>
+            <a href="#" class="social-link">terms & services</a>
+            <a href="#" class="social-link">privacy page</a>
+        </div>
+        <div>
+            <a href="#" class="social-link">instagram</a>
+            <a href="#" class="social-link">facebook</a>
+            <a href="#" class="social-link">twitter</a>
+        </div>
+    </div>
+    <p class="footer-credit">Tripsleep, Best hotels online. All images taken from
+        <a href="https://www.shutterstock.com/"><abbr title="Shutterstock">Shutterstock.com</abbr></a><br/>
+        Copyright &copy; 2022, All right reserved</p>
+</footer>
+<script src="../js/search-filter.js"></script>
 </body>
 </html>

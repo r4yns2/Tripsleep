@@ -1,0 +1,108 @@
+
+h3 {
+    display:inline-block;
+    font-size:32px;
+    line-height:36px;
+    position:relative;
+    margin-top:28px;
+    margin-bottom:15px;
+}
+h3:before{
+    left:-40px;
+}
+h3:before, h3:after {
+    content:"";
+    position:absolute;
+    bottom:18px;
+    height:1px;
+    width:40px;
+    margin:0 -15px;
+    background-color:black;
+}
+h3:after{
+    right:-40px;
+}
+
+.item {
+    position:relative;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+
+.item span:first-of-type {
+    background-image:linear-gradient(to right,rgba(56,47,47,.5) 33%,rgba(0,0,0,0) 0%);
+    background-position:bottom;
+    background-size:3px 1px;
+    background-repeat:repeat-x;
+    height:1px;
+    width:100%;
+    position:absolute;
+    top:22px;
+}
+
+.badge {
+    display:inline-block;
+    padding:0 10px;
+    font-size:12px;
+    font-weight:300;
+    line-height:26px;
+    text-align:center;
+    vertical-align:middle;
+    text-transform:uppercase;
+    border:1px solid rgba(0,0,0,.05);
+    letter-spacing:1px;
+    border-radius:3px;
+    margin:-2px 5px 0 0;
+}
+.note {
+    padding:0 5px 0 7px;
+    min-width:23px;
+    box-sizing:border-box;
+    border-radius:12px;
+    line-height:21px;
+}
+.veggie {
+    color:#82b440;
+    border-color:#82b440;
+}
+
+.item span:nth-of-type(2n) {
+    position:absolute;
+    font-size:22px;
+    font-weight:400;
+    right:0;
+    padding-left:8px;
+    background-color:#fff;
+    z-index:0;
+}
+.item h4 {
+    display:inline-block;
+    padding-right:8px;
+    font-size:1.25rem;
+    max-width:80%;
+    text-transform:capitalize;
+    margin-bottom:4px;
+    position:relative;
+}
+
+@media screen and (max-width: 600px) {
+    .logo{
+        margin-left: 43vw;
+    }
+    .links-container{
+        text-align: center;
+    }
+    .link-item{
+        height: 18.5px;
+    }
+
+    .col-12 h1{
+        font-size: 30px;
+    }
+
+    .text-center h3{
+        font-size: 20px;
+        width: 45vw;
+    }
+}

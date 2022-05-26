@@ -1,1 +1,233 @@
 @import "nav.css";
+@import "footer.css";
+@import "product.css";
+@import "search.css";
+
+
+
+
+.main-header{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('../img/Hotel-room-2.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header .logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.main-header .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+    text-shadow: 2px 2px black;
+}
+
+.button{
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.btn {
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    letter-spacing: .25px;
+    line-height: normal;
+    padding: 11px 24px;
+}
+
+.btn:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+}
+
+.btn:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67), 0 8px 12px 6px rgb(60 64 67);
+    outline: none;
+    border: 2px solid #4285f4;
+}
+
+.rooms{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.rooms-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.rooms-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.rooms-container::-webkit-scrollbar{
+    display: none;
+}
+
+.rooms-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+.room-image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.rooms-picture{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.discount-tag{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.rooms-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background: #efefef;
+}
+
+.product-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.room-name{
+    text-transform: uppercase;
+}
+
+.room-short-des{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.actual-price{
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.pre-btn, .nxt-btn{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn{
+    right: 0;
+}
+
+.pre-btn img, .nxt-btn img{
+    opacity: 0.2;
+}
+
+.pre-btn:hover img, .nxt-btn:hover img{
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .main-header .logo{
+        width: 100%;
+        max-width: 150px;
+    }
+    .main-header{
+        height: calc(100vh - 200px);
+    }
+    .main-header .sub-heading{
+        width: 70vw;
+        font-size: 20px;
+        font-weight: 150;
+        height: 10vh;
+    }
+    .rooms-category{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .rooms-container{
+        width: 90%;
+    }
+
+}
