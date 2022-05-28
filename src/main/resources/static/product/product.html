@@ -12,14 +12,10 @@
 <body>
 <nav class="navbar">
     <div id="nav">
-        <a href="../index.html"> <img src="/static/img/Logo-picture.png" class="logo" alt="Logo of company"></a>
+        <a href="../index.html"> <img src="../img/Logo-picture.png" class="logo" alt="Logo of company"></a>
         <div class="nav-items">
-            <div class="search">
-                <input type="text" class="search-box" placeholder="Search">
-                <button class="search-btn">Search</button>
-            </div>
-            <a href="#"><img src="/static/img/Account-picture.png" alt="Account"></a>
-            <a href="#"><img src="/static/img/Cart-picture.png" alt="Cart"></a>
+            <a href="../login.html"><img src="../img/Account-picture.png" alt="Account"></a>
+            <a href="../cart.html"><img src="../img/Cart-picture.png" alt="Cart"></a>
         </div>
     </div>
     <ul class="links-container">
@@ -31,10 +27,10 @@
 <section class="product-details">
     <div class="image-slider">
         <div class="product-images">
-            <img src="/static/img/Hotel-room-1.jpg" class="active" alt="">
-            <img src="/static/img/Hotel-room-2.png" alt="">
-            <img src="/static/img/Hotel-room-3.jpg" alt="">
-            <img src="/static/img/Hotel-room-4.jpg" alt="">
+            <img src="../img/Hotel-room-1.jpg" class="active" alt="Active hotel image">
+            <img src="../img/Hotel-room-2.png" alt="">
+            <img src="../img/Hotel-room-3.jpg" alt="">
+            <img src="../img/Hotel-room-6.jpg" alt="">
         </div>
     </div>
     <section>
@@ -47,12 +43,12 @@
 
             <p class="product-sub-heading">Amenities</p>
 
-            <label class="size-radio-btn check" style="background-size: cover; background-image: url('/static/img/Coffee-icon.png')" title="Breakfast"></label>
-            <label class="size-radio-btn" style="background-size: cover; background-image: url('/static/img/Wifi-icon.png')" title="Free-wifi"></label>
-            <label  class="size-radio-btn" style="background-size: cover; background-image: url('/static/img/TV-icon.png')" title="Cable-Tv"></label>
-            <label class="size-radio-btn" style="background-size: cover; background-image: url('/static/img/Swimmingpool-icon.png')" title="Swimming-pool"></label>
-            <label class="size-radio-btn" style="background-size: cover; background-image: url('/static/img/Parking-icon.png')" title="Parking"></label>
-
+            <label class="size-radio-btn" style="background-size: cover; background-image: url('../img/Coffee-icon.png')" title="Breakfast"></label>
+            <label class="size-radio-btn" style="background-size: cover; background-image: url('../img/Wifi-icon.png')" title="Free-wifi"></label>
+            <label  class="size-radio-btn" style="background-size: cover; background-image: url('../img/TV-icon.png')" title="Cable-Tv"></label>
+            <label class="size-radio-btn" style="background-size: cover; background-image: url('../img/Swimmingpool-icon.png')" title="Swimming-pool"></label>
+            <label class="size-radio-btn" style="background-size: cover; background-image: url('../img/Parking-icon.png')" title="Parking"></label>
+            <br/>
             <button class="btn cart-btn">Order</button>
             <button class="btn">add to wishlist</button>
         </div>
@@ -69,11 +65,11 @@
         <div class="footer-ul-container">
             <ul class="category">
                 <li class="category-title">Hotel</li>
-                <li><a href="#" class="footer-link">Rooms</a></li>
+                <li><a href="../rooms/rooms.html" class="footer-link">Rooms</a></li>
             </ul>
             <ul class="category">
                 <li class="category-title">Resturant</li>
-                <li><a href="#" class="footer-link">Menu</a></li>
+                <li><a href="../resturant/resturant.html" class="footer-link">Menu</a></li>
             </ul>
         </div>
     </div>
@@ -83,13 +79,11 @@
     <p class="info">Support e-mails - help@tripsleep.com, customersupport@tripsleep.com</p>
     <p class="info">Telephone - 67 88 34 55</p>
     <!-- Source: https://google-map-generator.com/ Line: 158-166 -->
-    <div class="mapouter" style="position:relative;text-align:right;height:250px;width:350px;">
-        <div class="gmap_canvas" style="overflow:hidden;background:none!important;height:250px;width:350px;">
+    <div class="mapouter">
+        <div class="gmap_canvas">
             <iframe width="350" height="250" id="gmap_canvas"
                     src="https://maps.google.com/maps?q=Slottsplassen%201,%200010%20Oslo&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            <a href="https://123movies-to.org"></a><br>
-            <a href="https://www.embedgooglemap.net">google map widget for website</a>
         </div>
     </div>
     <div class="footer-social-container">

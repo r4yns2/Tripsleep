@@ -2,7 +2,7 @@
     width: 100%;
     padding: 60px 10vw;
     display: flex;
-    justify-content: space-between;
+
 }
 
 .image-slider{
@@ -41,6 +41,7 @@
 
 .details{
     width: 100%;
+    margin-left: 3vw;
 }
 
 .details .product-room{
@@ -129,4 +130,20 @@
 .des{
     color: #383838;
     line-height: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .image-slider{
+        width: 100vw;
+        height: 65vh;
+    }
+    .details{
+        position: relative;
+        width: 100%;
+    }
+    .product-details{
+        display: inline;
+        padding: 0;
+    }
 }
