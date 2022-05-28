@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/nav.css"/>
+  <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet" href="css/login.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+<body>
+<nav class="navbar">
+  <div id="nav">
+    <a href="index.html"> <img src="img/Logo-picture.png" class="logo" alt="Logo of company"></a>
+    <div class="nav-items">
+      <a href="./login.html"><img src="img/Account-picture.png" alt="Account"></a>
+      <a href="#"><img src="img/Cart-picture.png" alt="Cart"></a>
+    </div>
+  </div>
+  <ul class="links-container">
+    <li class="link-item"><a href="index.html" class="link">Home</a></li>
+    <li class="link-item"><a href="./rooms/rooms.html" class="link">Rooms</a></li>
+    <li class="link-item"><a href="./resturant/resturant.html" class="link">Resturant</a></li>
+  </ul>
+</nav>
+<section class="vh-50">
+  <div class="container py-5 h-150">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-8">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row">
+            <div class="col-md-12 col-lg-12 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+                <form>
+                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form2Example17" class="form-control form-control-lg" />
+                    <label class="form-label" for="form2Example17">Email address</label>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form2Example27" class="form-control form-control-lg" />
+                    <label class="form-label" for="form2Example27">Password</label>
+                  </div>
+                  <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                  </div>
+                  <a class="small text-muted" href="#">Forgot password?</a>
+                  <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#" style="color: #393f81;">Register here</a></p>
+                  <a href="#" class="small text-muted">Terms & Services.</a>
+                  <a href="#" class="small text-muted">Privacy policy</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-content">
+    <img src="img/Logo-Light.png" class="logo" alt="Logo of company">
+    <div class="footer-ul-container">
+      <ul class="category">
+        <li class="category-title">Hotel</li>
+        <li><a href="./rooms/rooms.html" class="footer-link">Rooms</a></li>
+      </ul>
+      <ul class="category">
+        <li class="category-title">Resturant</li>
+        <li><a href="./resturant/resturant.html" class="footer-link">Menu</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-title">About company</p>
+  <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Repellat tempore ad suscipit, eos eius quisquam sed optio nisi</p>
+  <p class="info">Support e-mails - help@tripsleep.com, customersupport@tripsleep.com</p>
+  <p class="info">Telephone - 67 88 34 55</p>
+  <!-- Source: https://google-map-generator.com/ Line: 158-166 -->
+  <div class="mapouter">
+    <div class="gmap_canvas">
+      <iframe width="350" height="250" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Slottsplassen%201,%200010%20Oslo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </div>
+  </div>
+  <div class="footer-social-container">
+    <div>
+      <a href="#" class="social-link">terms & services</a>
+      <a href="#" class="social-link">privacy page</a>
+    </div>
+    <div>
+      <a href="#" class="social-link">instagram</a>
+      <a href="#" class="social-link">facebook</a>
+      <a href="#" class="social-link">twitter</a>
+    </div>
+  </div>
+  <p class="footer-credit">Tripsleep, Best hotels online. All images taken from
+    <a href="https://www.shutterstock.com/"><abbr title="Shutterstock">Shutterstock.com</abbr></a><br/>
+    Copyright &copy; 2022, All right reserved</p>
+</footer>
+</body>
+</html>
